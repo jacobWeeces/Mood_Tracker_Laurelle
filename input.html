@@ -1,0 +1,30 @@
+<!-- input.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input Mood Data</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="inputTitle">Input Mood Data</h1>
+  <form id="moodForm">
+    <label>Date:
+      <input type="date" id="date" required>
+    </label>
+    <label>Time:
+      <input type="time" id="time" required>
+    </label>
+    <label>Mood Score (0-10):
+      <input type="number" id="mood" min="0" max="10" required>
+    </label>
+    <label>Notes:
+      <textarea id="notes"></textarea>
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+  <button onclick="location.href='index.html'">Back to Overview</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
