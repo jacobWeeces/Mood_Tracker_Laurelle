@@ -2,13 +2,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 20px;
-  background-color: #121212; /* Dark Mode Background */
-  color: #E0E0E0; /* Light Gray Text for Readability */
+  background-color: #F5F5F7; /* Pastel Stone Gray for Light Mode */
+  color: #3C3C3C; /* Charcoal Gray Text for Readability */
 }
 
 h1 {
   text-align: center;
-  color: #BB86FC; /* Light Purple Accent */
+  color: #F8BBD0; /* Soft Blush Pink */
 }
 
 form,
@@ -16,17 +16,16 @@ table {
   margin: 0 auto;
   max-width: 600px;
   width: 100%;
-  background-color: #1E1E1E; /* Dark Card Background */
+  background-color: #FFF7E6; /* Light Peach for Forms and Tables */
   padding: 20px;
   border-radius: 8px; /* Slight rounding for a clean look */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 label {
-  
   display: block;
   margin-bottom: 10px;
-  color: #E0E0E0; /* Light Gray */
+  color: #3C3C3C; /* Charcoal Gray */
   transition: color 0.3s ease;
 }
 
@@ -37,7 +36,7 @@ body[data-theme='light'] label {
 input,
 textarea,
 button {
-  width: 100%;
+  width: calc(100% - 20px); /* Adjust width to add space on the right */
   padding: 10px;
   margin-top: 10px;
   border: none;
@@ -46,13 +45,13 @@ button {
 
 input,
 textarea {
-  background-color: #333333; /* Dark Input Background */
-  color: #E0E0E0; /* Light Text */
+  background-color: #CFFFE5; /* Mint Green for Input Background */
+  color: #3C3C3C; /* Charcoal Gray Text */
 }
 
 button {
   margin-top: 20px;
-  background-color: #03DAC5; /* Teal Accent */
+  background-color: #D4BFFF; /* Misty Lavender for Button Background */
   color: #121212; /* Dark Text for Contrast */
   border: none;
   cursor: pointer;
@@ -60,7 +59,7 @@ button {
 }
 
 button:hover {
-  background-color: #018786; /* Darker Teal for Hover */
+  background-color: #A4EBF3; /* Pale Aqua for Hover Effect */
 }
 
 table {
@@ -70,7 +69,7 @@ table {
 }
 
 th {
-  background-color: #03DAC5; /* Teal Accent */
+  background-color: #F8BBD0; /* Soft Blush Pink for Table Header */
   color: #121212; /* Dark Text for Contrast */
   padding: 15px;
 }
@@ -81,3 +80,48 @@ td {
   text-align: left;
 }
 
+/* Mood Key Styles */
+.mood-key {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #FFF7E6; /* Light Peach for Background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mood-key-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mood-key-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.mood-key-color.mood-0-1 {
+  background-color: #FFC1C1; /* Light Coral for Depressed */
+}
+
+.mood-key-color.mood-2-3 {
+  background-color: #FFD59E; /* Light Apricot for Down */
+}
+
+.mood-key-color.mood-4-5 {
+  background-color: #CFFFE5; /* Mint Green for Average */
+}
+
+.mood-key-color.mood-6-7 {
+  background-color: #A4EBF3; /* Pale Aqua for Good */
+}
+
+.mood-key-color.mood-8-9 {
+  background-color: #D4BFFF; /* Misty Lavender for Hypomanic */
+}
+
+.mood-key-color.mood-10 {
+  background-color: #F8BBD0; /* Soft Blush Pink for Manic */
+}

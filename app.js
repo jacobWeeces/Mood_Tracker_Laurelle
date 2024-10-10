@@ -103,7 +103,7 @@ function displayMoodChart() {
           hitRadius: 40,
           label: 'Average Mood Score',
           data: averageMoods,
-          borderColor: 'rgba(75, 192, 192, 1)',
+          borderColor: '#D4BFFF', /* Misty Lavender for line color */
           fill: false,
           tension: 0.1,
         },
@@ -257,18 +257,18 @@ function setTheme(theme) {
       el.style.color = '#121212';
     });
   } else {
-    document.body.style.backgroundColor = '#FFFFFF';
-    document.body.style.color = '#333333';
+    document.body.style.backgroundColor = '#F5F5F7';
+    document.body.style.color = '#3C3C3C';
     document.querySelectorAll('form, table').forEach((el) => {
-      el.style.backgroundColor = '#FFFACD';
+      el.style.backgroundColor = '#FFF7E6';
     });
     document.querySelectorAll('input, textarea').forEach((el) => {
-      el.style.backgroundColor = '#FFFFFF';
-      el.style.color = '#333333';
+      el.style.backgroundColor = '#CFFFE5';
+      el.style.color = '#3C3C3C';
     });
     document.querySelectorAll('button').forEach((el) => {
-      el.style.backgroundColor = '#FFA500';
-      el.style.color = '#FFFFFF';
+      el.style.backgroundColor = '#D4BFFF';
+      el.style.color = '#121212';
     });
   }
 }
