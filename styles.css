@@ -23,9 +23,15 @@ table {
 }
 
 label {
+  
   display: block;
   margin-bottom: 10px;
   color: #E0E0E0; /* Light Gray */
+  transition: color 0.3s ease;
+}
+
+body[data-theme='light'] label {
+  color: #000000; /* Black in Light Mode */
 }
 
 input,
@@ -75,24 +81,3 @@ td {
   text-align: left;
 }
 
-body[data-theme='dark'] {
-  background-color: #121212;
-  color: #E0E0E0;
-}
-
-body[data-theme='light'] {
-  background-color: #FFFFFF;
-  color: #333333;
-}
-
-body[data-theme='dark'] form,
-body[data-theme='dark'] table {
-  background-color: #1E1E1E;
-}
-
-body[data-theme='light'] form,
-body[data-theme='light'] table {
-  background-color: #FFFACD;
-}
-
-/* Similar changes for input, textarea, button, th, td as per the theme */
